@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 1</title>
+</head>
+<body>
+    <p>Before the sctipt</p>
+    <script>
+ 
+        var welcomeMessage = 'Hello World!';
+
+       console.log(welcomeMessage);
+
+
+       function printHello() {
+   console.log ("hello");
+}
+printHello();
+
+function printBrowserInfo() {
+    console.log(navigator.platform);
+    console.log(navigator.appVersion);
+    console.log(navigator.vendor);
+}
+printBrowserInfo();
+
+function isOnline() {
+    if (navigator.onLine) {
+        console.log("Online");
+    } else {
+        console.log("Offline");
+        }
+}
+
+isOnline();
+
+function getScreenDimension() {
+    console.log("Available screen dimesions: " + screen.availWidth + "x" + screen.availHeight);
+    console.log("Screen dimensions: " + screen.width + "x" + screen.height);
+}
+getScreenDimension();
+
+
+    </script>
+     <p>After the sctipt</p>
+</body>
+</html>
